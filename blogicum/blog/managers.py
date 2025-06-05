@@ -11,4 +11,3 @@ class PublishedPostManager(models.Manager):
         ).annotate(
             comment_count=models.Count('comments')
         ).order_by('-pub_date')
-    
